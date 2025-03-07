@@ -15,7 +15,7 @@ encoder=load_model("Encoder_MP.pkl")
 scaler=load_model("scaler.pkl")
 model = tf.keras.models.load_model("final.h5")
 
-st.write(***FINAL CNC PREDICTION PROJECT***)
+st.write(**FINAL CNC PREDICTION PROJECT**)
 uploaded_file = st.file_uploader("Upload an Excel file", type=["csv"])
 
 if uploaded_file is not None:
