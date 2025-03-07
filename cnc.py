@@ -27,14 +27,14 @@ def set_background_image_local(image_path):
         unsafe_allow_html=True
     )
 
-set_background_image_local(r"12.png")
+set_background_image_local(r"cnc.png")
 
 def load_model(model_path):
     with open(model_path, 'rb') as file:
         return pickle.load(file)
 encoder=load_model("Encoder_MP.pkl")
 scaler=load_model("scaler.pkl")
-model = tf.keras.models.load_model("model_final.h5")
+model = tf.keras.models.load_model("final.h5")
 tab1, tab2 = st.tabs(["Home", "Application"])
 
 uploaded_file = st.file_uploader("Upload an Excel file", type=["csv"])
