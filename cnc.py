@@ -7,7 +7,16 @@ import pickle
 import base64
 from tensorflow.keras.models import load_model
 from tensorflow.keras.layers import ReLU
+custom_css = """
+<style>
+    body {
+        color: white;  /* Change this to any color */
+    }
+</style>
+"""
 
+# Apply the custom CSS
+st.markdown(custom_css, unsafe_allow_html=True)
 def set_background_image_local(image_path):
     with open(image_path, "rb") as file:
         data = file.read()
